@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portfolio Card", "Portfolio Card.csproj", "{E2E09C87-76D8-483D-B0B0-B4BDF89EFD15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{EF23395F-9CF3-401B-BF64-B56BA21C17DC}"
+	ProjectSection(SolutionItems) = preProject
+		style.css = style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{32866972-BE0F-45AA-8E8A-402087A1BF8F}"
+	ProjectSection(SolutionItems) = preProject
+		script.js = script.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{A4AC72CE-FC2B-48F3-94EA-F5485F604940}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\ACER\Desktop\myphoto.jpg = C:\Users\ACER\Desktop\myphoto.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{7A8F8D46-9836-495F-9E4D-FBBD5C776C3A}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2E09C87-76D8-483D-B0B0-B4BDF89EFD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E09C87-76D8-483D-B0B0-B4BDF89EFD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E09C87-76D8-483D-B0B0-B4BDF89EFD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E09C87-76D8-483D-B0B0-B4BDF89EFD15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF23395F-9CF3-401B-BF64-B56BA21C17DC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{32866972-BE0F-45AA-8E8A-402087A1BF8F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A4AC72CE-FC2B-48F3-94EA-F5485F604940} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7A8F8D46-9836-495F-9E4D-FBBD5C776C3A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C44C2263-C230-45D0-A227-D59F9A5034A1}
+	EndGlobalSection
+EndGlobal
