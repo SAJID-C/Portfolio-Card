@@ -1,90 +1,114 @@
-# BSc Engr. Md Sajid Chowdhury — Professional Portfolio
+# Md Sajid Chowdhury — Professional Portfolio
 
-> **Software Engineer & Lecturer | Founder of [NEXORA LMS](https://github.com/SAJID-C)**  
-> Production-grade, ultra-modern personal portfolio with dark mode, interactive terminal shell, and live-ready architecture.
+> **Software Engineer & Lecturer**  
+> BSc in Computer Science & Engineering | ICT Bangladesh  
+> *Building software. Teaching technology. Exploring AI-powered engineering.*  
+> **Live Site:** [https://portfolio-card-pfrz.vercel.app/](https://portfolio-card-pfrz.vercel.app/)
 
 ---
 
-## 🌟 Overview
+## 🚀 Overview
 
-This repository hosts the official personal portfolio of **BSc Engr. Md Sajid Chowdhury**. It is designed with modern glassmorphism, responsive cyber aesthetics, smooth micro-interactions, and comprehensive showcases of production systems, academic lecturing, and full-stack projects.
+A modern, responsive, and performance-optimized personal brand website for **Md Sajid Chowdhury**, engineered using **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS**.
 
-### 🚀 Live Features
-- **Modern Glassmorphic Dark UI**: Deep midnight palette with electric blue, violet, and emerald accents.
-- **Theme Switcher**: Instant Dark / Light mode toggle with `localStorage` memory persistence.
-- **Dynamic Typing Header**: Animated typing effect cycling through professional engineering & educator roles.
-- **Interactive Developer Console / Terminal**: Interactive in-browser terminal where users can type `about`, `skills`, `nexora`, `contact`, and `clear`.
-- **Interactive Skill Matrix**: Categorized filters (`All`, `Backend & APIs`, `Frontend & Web`, `Databases`, `Security & Tools`) with proficiency meters.
-- **Flagship Project Showcases**:
-  - **NEXORA LMS** (Modern Recorded Software Engineering EdTech platform)
-  - **Aroggo Niketon Mini Pharmacy System** (C# .NET Desktop Application)
-  - **Enterprise Auth & Session Defense Engine** (Argon2, JWT HS256, 2-device concurrency limits)
-  - **Full-Stack ASP.NET Core & Django Web Architectures**
-- **Stats Counter**: Animated numeric counters triggered on scroll via `IntersectionObserver`.
-- **Direct Contact System**: Direct mailto integration with pre-filled message templates, LinkedIn, and GitHub links.
-- **100% Mobile Responsive**: Seamless layout on phones, tablets, and ultra-wide displays.
+### Key Architectural Pillars:
+- **Clean Component Architecture**: Decoupled presentation (`components/`), typed data configurations (`data/`), and application routes (`app/`).
+- **Production-Grade Design**: Deep charcoal / near-black palette with restrained technological accents, fine borders, soft shadows, and zero visual clutter.
+- **Dark & Light Mode**: Default dark theme with an instantaneous theme toggle and `localStorage` persistence.
+- **Categorized Skills**: Zero generic percentage bars or fake statistics; structured cards for Programming, Backend, Database, Web, Engineering, and Tools.
+- **Interactive Project Showcase**: In-depth project modal showing Problem, Solution, Architecture, Features, and Tech Stack for *Fellowly Todo Microservice*, *Student Management System*, *CMS*, and *NEXORA LMS*.
+- **Pedagogical Framework**: Educational philosophy (*Learn &rarr; Practice &rarr; Build &rarr; Improve*) and industry-oriented AI software engineering curriculum.
+- **Accessible & SEO Ready**: OpenGraph metadata, Twitter Cards, semantic HTML, dynamic `sitemap.xml`, and `robots.txt`.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS & PostCSS
+- **Icons**: Lucide React
+- **Deployment Target**: Vercel
 
 ---
 
 ## 📂 Project Structure
 
 ```
-d:\MD Sajid Chowdhury\SAJIDPORTFOLIO\
-├── assets/
-│   └── images/
-│       ├── sajid-chowdhury.jpeg   # High-resolution portrait of Engr. Md Sajid Chowdhury
-│       └── nexora-preview.jpg      # NEXORA flagship LMS platform preview
-├── css/
-│   └── style.css                  # Modern stylesheet with variables, animations, glassmorphism
-├── js/
-│   └── script.js                  # Clean vanilla JavaScript for interactivity & terminal
-├── index.html                     # Main entrypoint with complete SEO and OpenGraph tags
-├── style.css                      # Root stylesheet bridge
-├── script.js                      # Root script bridge
-├── myphoto.jpg                    # High-res photo fallback
-└── README.md                      # Documentation & deployment guide
+src/
+├── app/
+│   ├── api/contact/route.ts   # Serverless contact submission route
+│   ├── globals.css            # Tailwind directives & theme configuration
+│   ├── layout.tsx             # Root layout with SEO & OpenGraph tags
+│   ├── page.tsx               # Orchestration of all portfolio sections
+│   ├── robots.ts              # Search engine robots.txt
+│   └── sitemap.ts             # XML sitemap route
+├── components/
+│   ├── About.tsx              # Narrative biography & competencies
+│   ├── AISection.tsx          # Engineering in the AI era
+│   ├── Contact.tsx            # Contact channels & interactive form
+│   ├── Education.tsx          # BSc in Computer Science & Engineering
+│   ├── Experience.tsx         # ICT Bangladesh journey & focus areas
+│   ├── Footer.tsx             # Minimal footer with links & copyright
+│   ├── Hero.tsx               # Primary statement & abstract editor UI
+│   ├── Navbar.tsx             # Sticky navigation with mobile drawer
+│   ├── Philosophy.tsx         # Learn -> Practice -> Build -> Improve
+│   ├── ProfileCard.tsx        # High-res portrait card & social links
+│   ├── ProjectCard.tsx        # Individual project card
+│   ├── ProjectModal.tsx       # In-depth architectural inspection modal
+│   ├── Projects.tsx           # Applied engineering project grid
+│   ├── Skills.tsx             # Categorized skill matrix
+│   ├── Statement.tsx          # Guiding engineering conviction
+│   └── Teaching.tsx           # Technology instruction & course card
+├── data/
+│   ├── experience.ts          # Professional timeline & education
+│   ├── profile.ts             # Personal identity, bio & socials
+│   ├── projects.ts            # Project metadata & specifications
+│   ├── skills.ts              # Categorized technical competencies
+│   └── teaching.ts            # Curricula, topics & philosophies
+├── lib/
+│   └── utils.ts               # Tailwind class merge helper
+public/
+└── images/
+    ├── sajid-chowdhury.jpeg   # High-resolution developer portrait
+    └── nexora-preview.jpg     # LMS platform preview
 ```
 
 ---
 
-## 🌐 How to Make It Live (Deployment Guide)
+## 💻 Local Development
 
-### Option 1: GitHub Pages (Recommended & Free)
-1. Push your updated code to GitHub:
-   ```bash
+```powershell
+# 1. Install dependencies
+npm install
+
+# 2. Run local development server
+npm run dev
+# The website will be available at http://localhost:3000
+
+# 3. Create production build
+npm run build
+
+# 4. Preview production build
+npm run start
+```
+
+---
+
+## 🌐 Deploy to Vercel
+
+This repository is pre-configured for instant zero-configuration deployment to Vercel:
+
+1. Push your repository to GitHub:
+   ```powershell
    git add .
-   git commit -m "feat: upgrade portfolio to modern production architecture"
+   git commit -m "feat: complete Next.js portfolio redesign"
    git push origin master
    ```
-2. Go to your repository on GitHub: `https://github.com/SAJID-C/Portfolio-Card`
-3. Click **Settings** (top right tabs) → **Pages** (left sidebar).
-4. Under **Build and deployment** > **Branch**:
-   - Select `master` branch.
-   - Select `/ (root)` folder.
-   - Click **Save**.
-5. Within 1-2 minutes, your website will be live at:
-   `https://sajid-c.github.io/Portfolio-Card/`
+2. In your Vercel Dashboard, import the `Portfolio-Card` repository.
+3. Click **Deploy**. Vercel will automatically build and deploy to:
+   **[https://portfolio-card-pfrz.vercel.app/](https://portfolio-card-pfrz.vercel.app/)**
 
 ---
 
-### Option 2: Vercel (Instant 30-Second Deploy)
-1. Go to [vercel.com](https://vercel.com) and log in with your GitHub account.
-2. Click **Add New Project** → Select `Portfolio-Card`.
-3. Keep default settings (Static site) and click **Deploy**.
-4. You will get a free `.vercel.app` domain with automated SSL.
-
----
-
-### Option 3: Netlify
-1. Go to [netlify.com](https://netlify.com) and log in.
-2. Either drag-and-drop this portfolio folder, or connect your GitHub repository `Portfolio-Card`.
-3. Click **Deploy Site**.
-
----
-
-## 📬 Contact & Links
-- **Email:** [mdsajidchowdhury99@gmail.com](mailto:mdsajidchowdhury99@gmail.com)
-- **LinkedIn:** [md-sajid-chowdhury-b91790340](https://www.linkedin.com/in/md-sajid-chowdhury-b91790340/)
-- **GitHub:** [SAJID-C](https://github.com/SAJID-C)
-
-© 2025 – 2026 BSc Engr. Md Sajid Chowdhury. All rights reserved.
+© 2026 Md Sajid Chowdhury. All rights reserved.
