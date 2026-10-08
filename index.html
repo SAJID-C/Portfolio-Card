@@ -1,66 +1,785 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Sajid Chowdhury Blog</title>
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>BSc Engr. Md Sajid Chowdhury | Software Engineer & Lecturer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Personal Portfolio of BSc Engr. Md Sajid Chowdhury — Software Engineer, Academic Lecturer, and Founder of NEXORA LMS. Specializing in Python (FastAPI), C# (.NET), PostgreSQL, Next.js, and Secure Backend Systems.">
+    <meta name="keywords" content="Md Sajid Chowdhury, Software Engineer, Lecturer, NEXORA, FastAPI, Next.js, Python, C#, ASP.NET, Portfolio, Bangladesh">
+    <meta name="author" content="BSc Engr. Md Sajid Chowdhury">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BSc Engr. Md Sajid Chowdhury | Software Engineer & Lecturer">
+    <meta property="og:description" content="Software Engineer, Lecturer & Founder @ NEXORA LMS. Designing production-grade backends, modern EdTech, and clean web systems.">
+    <meta property="og:image" content="assets/images/sajid-chowdhury.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="bg-dark text-light text-center py-4">
-        <h1>Md Sajid Chowdhury</h1>
-        <p>Web Developer & Software Engineer</p>
+    <!-- ==========================================================================
+         NAVIGATION BAR
+         ========================================================================== -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#hero" class="nav-brand">
+                <div class="brand-badge">&lt;SC /&gt;</div>
+                <div class="nav-brand-title">
+                    <span>Md Sajid Chowdhury</span>
+                    <span>BSc Engr. | Software Engineer</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#terminal" class="nav-link">Terminal</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                    <i class="fa-regular fa-paper-plane"></i> Hire Me
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <!-- Profile Section -->
-    <section class="container my-5 text-center">
-        <img src="images/myphoto.jpg" class="profile-pic img-fluid"; style="width: 200px; height: 200px; object-fit: cover;">
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-status-pill">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Engineering Roles & Consultations</span>
+                </div>
 
-        <h2 class="mt-3">Hello! I'm Md Sajid Chowdhury</h2>
-        <p class="lead">
-            I love creating modern websites, web apps, and small desktop applications.
-            My goal is to improve my coding skills and share my projects with the world.
-        </p>
+                <h1 class="hero-title">
+                    Hi, I'm <br>
+                    <span class="text-gradient">BSc Engr. Md Sajid Chowdhury</span>
+                </h1>
+
+                <div class="hero-subtitle-wrapper">
+                    <span>I am a</span>
+                    <span class="typed-text" id="typed-text"></span>
+                </div>
+
+                <p class="hero-bio">
+                    Bridging academic computer science rigor with production-grade software engineering. Founder & Creator of <strong>NEXORA LMS</strong>. Specializing in high-performance backends, RESTful APIs, scalable database architectures, and clean modern web applications.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-diagram-project"></i> Explore Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-regular fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="mailto:mdsajidchowdhury99@gmail.com?subject=Inquiry%20regarding%20Software%20Engineering%20Opportunities" class="btn btn-outline-emerald">
+                        <i class="fa-solid fa-file-arrow-down"></i> Request Resume
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/md-sajid-chowdhury-b91790340/" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mdsajidchowdhury99@gmail.com" class="hero-social-link" title="Send Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/?text=Hello%20Engr.%20Md%20Sajid%20Chowdhury" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="Connect on WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Portrait Visual -->
+            <div class="hero-visual">
+                <div class="portrait-card">
+                    <div class="portrait-img-wrapper">
+                        <img src="assets/images/sajid-chowdhury.jpeg" alt="BSc Engr. Md Sajid Chowdhury - Software Engineer & Lecturer" loading="eager">
+                    </div>
+                </div>
+
+                <!-- Floating Tech Chips -->
+                <div class="floating-chip chip-1">
+                    <i class="fa-brands fa-python"></i> Python & FastAPI
+                </div>
+                <div class="floating-chip chip-2">
+                    <i class="fa-solid fa-code"></i> C# & ASP.NET Core
+                </div>
+                <div class="floating-chip chip-3">
+                    <i class="fa-solid fa-database"></i> PostgreSQL & Next.js
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="container my-5">
-        <h3>🛠️ Skills</h3>
-        <ul>
-            <li>Programming Languages: Python, C#, JavaScript, HTML, CSS</li>
-            <li>Frameworks: Bootstrap, ASP.NET, Django (learning)</li>
-            <li>Tools: Visual Studio, VS Code, GitHub</li>
-        </ul>
+    <!-- ==========================================================================
+         METRICS / STATS SECTION
+         ========================================================================== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3" data-suffix="+">0</div>
+                    <div class="stat-label">Years of Tech & Teaching Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                    <div class="stat-label">Production & Practice Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">Students & Developers Mentored</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                    <div class="stat-label">Focus on Clean Code & Industry Standards</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="container my-5">
-        <h3>💻 Projects</h3>
-        <ul>
-            <li>Aroggo Niketon Mini Pharmacy System – Console & GUI based pharmacy management</li>
-            <li>Practice Web Projects – HTML, CSS, Bootstrap projects</li>
-            <li>Full-stack Project Experiments – ASP.NET & Django small applications</li>
-        </ul>
+    <!-- ==========================================================================
+         ABOUT SECTION
+         ========================================================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-user-tie"></i> Biography & Background
+                </div>
+                <h2 class="section-heading">Architecting Systems, Inspiring Learners</h2>
+                <p class="section-desc">
+                    Combining hands-on software development with academic classroom instruction to foster solid engineering practices.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am <strong>BSc Engr. Md Sajid Chowdhury</strong>, a passionate Software Engineer and Lecturer based in Bangladesh. My career centers around engineering robust, real-world software systems while teaching modern computer science disciplines to upcoming developers.
+                    </p>
+                    <p>
+                        Currently, I am the founder and lead developer of <strong>NEXORA LMS</strong> — an enterprise-grade learning management platform engineered with a decoupled <strong>FastAPI</strong> backend and a <strong>Next.js App Router</strong> frontend, featuring dynamic video protection and strict device-session governance.
+                    </p>
+                    <p>
+                        Whether designing relational schemas in PostgreSQL, crafting high-performance RESTful APIs, building desktop applications in C#, or teaching students the fundamentals of clean architecture and SOLID principles, I strive for clarity, security, and maintainability.
+                    </p>
+                    <div class="hero-cta-group" style="margin-top: 1.5rem; margin-bottom: 0;">
+                        <a href="#experience" class="btn btn-secondary btn-sm">
+                            <i class="fa-solid fa-briefcase"></i> View Career Timeline
+                        </a>
+                        <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i class="fa-brands fa-github"></i> Visit GitHub Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <h4>Academic Lecturing</h4>
+                        <p>Mentoring students through structured software engineering curricula, code reviews, and project labs.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h4>Backend & API Design</h4>
+                        <p>Building high-throughput REST APIs, asynchronous services, and repository layers in Python and C#.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4>Security & Defense</h4>
+                        <p>Implementing Argon2 password cryptography, JWT session tracking, and device concurrency safeguards.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4>Modern Web Platforms</h4>
+                        <p>Creating responsive, accessible web applications with Next.js, React, Tailwind CSS, and Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="container my-5 text-center">
-        <h3>🌐 Connect With Me</h3>
-        <p>
-            <a href="https://github.com/SAJID-C" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/md-sajid-chowdhury-b91790340/" target="_blank">LinkedIn</a> |
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Email</a>
-        </p>
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" style="background: rgba(15, 23, 42, 0.25);">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-microchip"></i> Technical Proficiency
+                </div>
+                <h2 class="section-heading">Skills & Technologies</h2>
+                <p class="section-desc">
+                    A comprehensive overview of the programming languages, frameworks, databases, and engineering tools I utilize in production and teaching.
+                </p>
+            </div>
+
+            <div class="skills-filter-nav">
+                <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+                <button class="skill-filter-btn" data-filter="backend">Backend & APIs</button>
+                <button class="skill-filter-btn" data-filter="frontend">Frontend & Web</button>
+                <button class="skill-filter-btn" data-filter="database">Databases & ORM</button>
+                <button class="skill-filter-btn" data-filter="security">Security & Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Python & FastAPI -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="color: #38bdf8;">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">Python & FastAPI</div>
+                        <div class="skill-desc">High-performance async REST APIs, Pydantic v2 schemas, Dependency Injection, and service architecture.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C# & .NET -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon" style="color: #a855f7;">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">C# & ASP.NET Core</div>
+                        <div class="skill-desc">Object-Oriented Programming, MVC architectures, WinForms/GUI desktop applications, and pharmacy systems.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL & Databases -->
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon" style="color: #3b82f6;">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">PostgreSQL & SQLAlchemy</div>
+                        <div class="skill-desc">Relational schema design, declarative mappings, Alembic automated migrations, indexing, and SQLite.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next.js & React -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon" style="color: #f8fafc;">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">Next.js & React</div>
+                        <div class="skill-desc">App Router, Server & Client components, TypeScript integration, responsive user interfaces, and state sync.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS & Bootstrap -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon" style="color: #06b6d4;">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">Tailwind CSS & Bootstrap</div>
+                        <div class="skill-desc">Modern glassmorphism, responsive mobile-first layouts, custom design systems, and rapid UI development.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript & TypeScript -->
+                <div class="skill-card" data-category="frontend backend">
+                    <div class="skill-icon" style="color: #facc15;">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">JavaScript & TypeScript</div>
+                        <div class="skill-desc">ES6+ syntax, asynchronous programming, typed interfaces, DOM manipulation, and API consumption.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Cryptography -->
+                <div class="skill-card" data-category="security backend">
+                    <div class="skill-icon" style="color: #10b981;">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">Argon2 & JWT Security</div>
+                        <div class="skill-desc">Cryptographic password hashing, token rotation, multi-device session concurrency limits, and video watermarking.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git, GitHub & Tooling -->
+                <div class="skill-card" data-category="security">
+                    <div class="skill-icon" style="color: #f97316;">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-name">Git, GitHub & Tooling</div>
+                        <div class="skill-desc">Version control, collaborative workflows, Postman API testing, Visual Studio, VS Code, and Linux environments.</div>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="bg-dark text-light text-center py-3">
-        © 2025 Md Sajid Chowdhury
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-layer-group"></i> Practical Work
+                </div>
+                <h2 class="section-heading">Featured Projects</h2>
+                <p class="section-desc">
+                    Showcasing real-world platforms, desktop architectures, and backend solutions engineered with precision.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: NEXORA LMS (Flagship Hero Card) -->
+                <div class="project-card featured-full">
+                    <div class="project-thumb-container">
+                        <img src="assets/images/nexora-preview.jpg" alt="NEXORA LMS Platform Preview">
+                        <div class="project-badge-top">
+                            <i class="fa-solid fa-star"></i> Flagship Platform
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <span>NEXORA LMS</span>
+                            <span class="font-mono text-gradient" style="font-size: 1rem;">Full-Stack LMS</span>
+                        </div>
+                        <p class="project-desc">
+                            A production-oriented Learning Management System specifically engineered for selling and delivering high-caliber recorded Software Engineering education. Features a decoupled FastAPI backend with Next.js App Router frontend, dynamic moving watermarks, multi-device session enforcement, automated Alembic migrations, and bKash/Nagad payment verification.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Next.js 14</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">SQLAlchemy 2.0</span>
+                            <span class="tech-tag">Argon2 / JWT</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#contact" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-graduation-cap"></i> Course Info
+                            </a>
+                            <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Aroggo Niketon Mini Pharmacy System -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <span>Aroggo Niketon Pharmacy System</span>
+                        </div>
+                        <p class="project-desc">
+                            A comprehensive desktop and console pharmacy management solution developed in C#. Streamlines medicine stock management, expiry tracking, prescription billing calculations, and printable receipt generation with high data integrity.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET Framework</span>
+                            <span class="tech-tag">Desktop GUI</span>
+                            <span class="tech-tag">Console & WinForms</span>
+                            <span class="tech-tag">Inventory Engine</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Enterprise Auth & Device Session Defense -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <span>Enterprise Auth & Session Defense</span>
+                        </div>
+                        <p class="project-desc">
+                            A robust cryptographic authentication engine with Argon2 password hashing, JWT HS256 access/refresh token rotation, active device concurrency limiting (max 2 devices), device fingerprinting, and security audit logs.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Argon2-cffi</span>
+                            <span class="tech-tag">PyJWT</span>
+                            <span class="tech-tag">Session Tracking</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-github"></i> View Architecture
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Full-Stack ASP.NET & Django Experiments -->
+                <div class="project-card" style="grid-column: span 2;">
+                    <div class="project-content">
+                        <div class="project-title">
+                            <span>Full-Stack Web Architectures & Experiments</span>
+                        </div>
+                        <p class="project-desc">
+                            A suite of experimental web projects implementing ASP.NET Core MVC and Django full-stack patterns. Demonstrates clean repository layers, relational database queries, asynchronous handlers, and responsive Bootstrap 5 client interfaces.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                            <span class="tech-tag">Bootstrap 5</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-github"></i> Explore All Repositories
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & EDUCATION TIMELINE
+         ========================================================================== -->
+    <section id="experience" style="background: rgba(15, 23, 42, 0.25);">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-timeline"></i> Track Record
+                </div>
+                <h2 class="section-heading">Experience & Education</h2>
+                <p class="section-desc">
+                    My professional journey across engineering, academic instruction, and platform building.
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Item 1: NEXORA LMS -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Founder & Platform Architect</h3>
+                            <span class="timeline-period">2025 – Present</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fa-solid fa-graduation-cap"></i> NEXORA LMS (Recorded Software Engineering Platform)
+                        </div>
+                        <p class="timeline-desc">
+                            Spearheading the engineering and curriculum design of NEXORA. Architected the decoupled FastAPI and Next.js technology stack, dynamic moving watermarking security, database schema with Alembic, and multi-device defense rules.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Lecturer in Software Engineering -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Lecturer & Course Instructor</h3>
+                            <span class="timeline-period">Academic & Industry</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fa-solid fa-building-columns"></i> Computer Science & Software Engineering
+                        </div>
+                        <p class="timeline-desc">
+                            Delivering academic lectures, laboratory practicals, and structured coursework in software engineering, programming methodologies (Python, C#), relational databases, and industry best practices. Mentoring students on capstone development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Software Engineer & Full-Stack Developer -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Software Engineer</h3>
+                            <span class="timeline-period">Professional Track</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fa-solid fa-laptop-code"></i> Backend & Application Development
+                        </div>
+                        <p class="timeline-desc">
+                            Architecting RESTful web services, database models, desktop systems, and responsive user experiences. Specializing in Python, C#, PostgreSQL, and modern web frameworks with an uncompromising focus on clean architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4: BSc in Engineering -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Bachelor of Science in Engineering (BSc Engr.)</h3>
+                            <span class="timeline-period">Engineering Degree</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fa-solid fa-award"></i> University Degree
+                        </div>
+                        <p class="timeline-desc">
+                            Completed comprehensive degree studies covering data structures, algorithms, object-oriented design, database management systems, network protocols, operating systems, and software project lifecycles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE DEVELOPER TERMINAL
+         ========================================================================== -->
+    <section id="terminal">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-solid fa-terminal"></i> Interactive Shell
+                </div>
+                <h2 class="section-heading">Developer Console</h2>
+                <p class="section-desc">
+                    Type commands below or click the quick command chips to explore my profile via terminal.
+                </p>
+            </div>
+
+            <div class="terminal-wrapper">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="terminal-dot dot-red"></span>
+                        <span class="terminal-dot dot-yellow"></span>
+                        <span class="terminal-dot dot-green"></span>
+                    </div>
+                    <div class="terminal-title">sajid@engineer-terminal: ~</div>
+                    <div style="font-size: 0.75rem; color: #64748b;">bash v5.2</div>
+                </div>
+
+                <div class="terminal-body">
+                    <div class="terminal-output" id="terminal-output">Welcome to Engr. Md Sajid Chowdhury's interactive terminal!
+Type 'help' to see available commands or click a chip below.</div>
+                    <div class="terminal-input-row">
+                        <span class="terminal-prompt">sajid@portfolio:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g., nexora, skills, contact)..." autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+
+                <div class="terminal-hints">
+                    <span style="font-size: 0.75rem; color: #64748b; margin-right: 0.5rem; align-self: center;">Quick execute:</span>
+                    <button class="terminal-chip" data-cmd="about">about</button>
+                    <button class="terminal-chip" data-cmd="skills">skills</button>
+                    <button class="terminal-chip" data-cmd="nexora">nexora</button>
+                    <button class="terminal-chip" data-cmd="contact">contact</button>
+                    <button class="terminal-chip" data-cmd="clear">clear</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" style="background: rgba(15, 23, 42, 0.25);">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <i class="fa-regular fa-paper-plane"></i> Get In Touch
+                </div>
+                <h2 class="section-heading">Let's Connect & Collaborate</h2>
+                <p class="section-desc">
+                    Have an engineering opportunity, consultation request, or want to discuss Software Engineering education? Reach out directly!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Channels -->
+                <div class="contact-info-card">
+                    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.75rem;">Contact Information</h3>
+                    <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+                        Feel free to drop me an email, connect on LinkedIn, or review my repositories on GitHub. I typically respond within 24 hours.
+                    </p>
+
+                    <div class="contact-channels">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span>Official Email</span>
+                                <a href="mailto:mdsajidchowdhury99@gmail.com">mdsajidchowdhury99@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span>LinkedIn Profile</span>
+                                <a href="https://www.linkedin.com/in/md-sajid-chowdhury-b91790340/" target="_blank" rel="noopener noreferrer">md-sajid-chowdhury-b91790340</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span>GitHub Repositories</span>
+                                <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer">github.com/SAJID-C</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span>Location</span>
+                                <p>Bangladesh (Available for Remote / Hybrid)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="contact-form">
+                    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.75rem;">Send a Direct Message</h3>
+                    <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+                        Fill out the details below to initiate direct communication.
+                    </p>
+
+                    <form id="portfolio-contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Your Name</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Your Email Address</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="e.g. john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Software Engineering Opportunity / Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <div id="form-status-msg" style="display: none; font-size: 0.88rem; margin-bottom: 1rem; font-weight: 600;"></div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <p>© 2025 – 2026 <strong>BSc Engr. Md Sajid Chowdhury</strong>. All rights reserved.</p>
+                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">
+                    Software Engineer & Lecturer | Founder @ NEXORA LMS
+                </p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/SAJID-C" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/md-sajid-chowdhury-b91790340/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:mdsajidchowdhury99@gmail.com" class="footer-social-link" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/?text=Hello%20Engr.%20Md%20Sajid%20Chowdhury" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Bundle -->
+    <script src="js/script.js"></script>
 </body>
 </html>
