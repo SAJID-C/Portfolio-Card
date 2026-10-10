@@ -24,32 +24,32 @@ export function Skills() {
       : skillCategories.filter((c) => c.category === activeCategory);
 
   return (
-    <section id="skills" className="py-20 sm:py-28 border-t border-neutral-200/60 dark:border-white/[0.06]">
+    <section id="skills" className="py-20 sm:py-28 border-t border-cream-300/80 dark:border-dark-700/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <span className="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
-            Technical Stack
+          <span className="text-xs font-mono font-semibold tracking-wider text-terracotta-500 uppercase">
+            Technical Competencies
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mt-2 tracking-tight">
-            Skills &amp; Technologies
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal-900 dark:text-cream-50 mt-2 tracking-tight">
+            Skills &amp; Technologies<span className="text-terracotta-500">.</span>
           </h2>
-          <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 mt-2">
+          <p className="text-sm sm:text-base text-charcoal-600 dark:text-charcoal-400 mt-2">
             Structured skill categories based on production engineering and instructional delivery.
           </p>
         </div>
 
-        {/* Category Filter Pills */}
-        <div className="flex flex-wrap gap-2 mb-10">
+        {/* Category Filter Pills (Terracotta & Sand) */}
+        <div className="flex flex-wrap gap-2.5 mb-10">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
+              className={`px-4 py-2 rounded-lg text-xs font-mono font-medium transition-all ${
                 activeCategory === cat
-                  ? "bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 shadow-sm"
-                  : "bg-neutral-100 dark:bg-white/[0.04] text-neutral-600 dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-white/[0.08]"
+                  ? "bg-terracotta-500 text-white shadow-sm"
+                  : "bg-cream-200 dark:bg-dark-800 text-charcoal-700 dark:text-cream-200 hover:bg-cream-300 dark:hover:bg-dark-700"
               }`}
             >
               {cat}
@@ -64,28 +64,28 @@ export function Skills() {
             return (
               <div
                 key={catItem.category}
-                className="rounded-2xl p-6 sm:p-7 bg-white dark:bg-dark-850 border border-neutral-200/80 dark:border-white/[0.08] shadow-soft hover:border-brand-500/40 transition-all group flex flex-col justify-between"
+                className="rounded-2xl p-6 sm:p-7 bg-white dark:bg-dark-850 border border-cream-300 dark:border-dark-700 shadow-soft hover:border-terracotta-400 transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="p-2.5 rounded-xl bg-neutral-100 dark:bg-white/[0.05] text-brand-600 dark:text-brand-400 group-hover:bg-brand-500/10 transition-colors">
+                    <div className="p-2.5 rounded-xl bg-cream-100 dark:bg-dark-800 text-terracotta-500 group-hover:bg-terracotta-50 dark:group-hover:bg-terracotta-900/30 transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-lg font-bold text-neutral-900 dark:text-white">
+                    <h3 className="font-serif text-xl font-medium text-charcoal-900 dark:text-cream-50">
                       {catItem.category}
                     </h3>
                   </div>
 
-                  <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mb-5">
+                  <p className="text-xs text-charcoal-500 dark:text-charcoal-400 leading-relaxed mb-5">
                     {catItem.description}
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-neutral-100 dark:border-white/[0.04]">
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-cream-200 dark:border-dark-750">
                   {catItem.skills.map((skill, sIdx) => (
                     <span
                       key={sIdx}
-                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-neutral-50 dark:bg-white/[0.03] text-neutral-800 dark:text-neutral-200 border border-neutral-200/60 dark:border-white/[0.06] hover:border-brand-500/30 transition-colors"
+                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-cream-50 dark:bg-dark-800 text-charcoal-800 dark:text-cream-200 border border-cream-200 dark:border-dark-700 hover:border-terracotta-400 transition-colors"
                     >
                       {skill}
                     </span>

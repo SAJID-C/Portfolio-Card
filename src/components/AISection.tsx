@@ -10,18 +10,18 @@ export function AISection() {
   const cardIcons = [Cpu, Terminal, Compass];
 
   return (
-    <section className="py-20 sm:py-28 border-t border-neutral-200/60 dark:border-white/[0.06]">
+    <section className="py-20 sm:py-28 border-t border-cream-300/80 dark:border-dark-700/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <span className="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+          <span className="text-xs font-mono font-semibold tracking-wider text-terracotta-500 uppercase">
             Modern Engineering Paradigms
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mt-2 tracking-tight">
-            {aiSection.title}
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal-900 dark:text-cream-50 mt-2 tracking-tight">
+            {aiSection.title}<span className="text-terracotta-500">.</span>
           </h2>
-          <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base text-charcoal-600 dark:text-charcoal-300 mt-3 leading-relaxed">
             {aiSection.statement}
           </p>
         </div>
@@ -33,29 +33,29 @@ export function AISection() {
             return (
               <div
                 key={idx}
-                className="rounded-2xl p-6 sm:p-8 bg-white dark:bg-dark-850 border border-neutral-200/80 dark:border-white/[0.08] shadow-soft hover:border-brand-500/40 transition-all flex flex-col justify-between"
+                className="rounded-2xl p-6 sm:p-8 bg-white dark:bg-dark-850 border border-cream-300 dark:border-dark-700 shadow-soft hover:border-terracotta-400 transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="p-3 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
+                    <div className="p-3 rounded-xl bg-terracotta-50 dark:bg-terracotta-900/30 text-terracotta-600 dark:text-terracotta-400 border border-terracotta-200 dark:border-terracotta-800">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-neutral-100 dark:bg-white/[0.04] text-neutral-600 dark:text-neutral-400">
+                    <span className="text-[11px] font-mono px-2.5 py-1 rounded bg-cream-100 dark:bg-dark-800 text-charcoal-700 dark:text-cream-200 border border-cream-200 dark:border-dark-700">
                       {card.highlight}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-2.5">
+                  <h3 className="font-serif text-2xl font-medium text-charcoal-900 dark:text-cream-50 mb-2.5">
                     {card.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-charcoal-600 dark:text-charcoal-400 leading-relaxed">
                     {card.description}
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-neutral-100 dark:border-white/[0.04] flex items-center gap-1.5 text-xs text-brand-600 dark:text-brand-400 font-mono">
-                  <ShieldCheck className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-cream-200 dark:border-dark-700 flex items-center gap-1.5 text-xs text-terracotta-600 dark:text-terracotta-400 font-mono">
+                  <ShieldCheck className="w-4 h-4" />
                   <span>Fundamentals First</span>
                 </div>
               </div>
